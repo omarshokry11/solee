@@ -1,0 +1,117 @@
+@import "../../../../Style/_variables.scss";
+
+.main-confirm-send-container
+{
+    background-color: #2D325A;
+    border-radius: 10px;
+    width: 500px;
+    height: 470px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    @media (max-width: 768px) {
+        padding: 10px;
+        height: 450px;
+    }
+    @media (max-width: 550px) {
+        width: 520px;
+    }
+    @media (max-width: 420px) {
+        width: 400px;
+    }
+    @media (max-width: 411px) {
+        width: 400px;
+        height: 520px;
+    }
+    @media (max-width: 380px) {
+        width: 355px;
+        height: 500px;
+    }
+    @media (max-width: 360px) {
+        width: 340px;
+    }
+    @media (max-width: 320px) {
+        width: 310px;
+        height: 450px;
+    }
+    @media (max-width: 280px) {
+        width: 277px;
+        height: 400px;
+    }
+    .icon-times
+    {
+        position: relative;
+        right: 20px;
+        top: 15px;
+        i{
+            color: #A6A7B3;
+            font-size: 25px;
+        }
+    }
+    .icon
+    {
+        background-color: #385979;
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        line-height: 80px;
+        text-align: center;
+        margin: 50px auto 0;
+        i{
+            font-size: 35px;
+            color: #63F4F7;
+        }
+    }
+    .details
+    {
+        text-align: center;
+        padding: 30px;
+        @media (max-width: 280px) {
+            padding: 10px;
+        }
+        h4{
+            margin: 20px;
+            @media (max-width: 768px) {
+                font-size: 18px;
+            }
+            @media (max-width: 320px) {
+                font-size: 17px !important;
+            }
+        }
+        p{
+            margin: 0;
+            font-size: 18px !important;
+            line-height: 2;
+            @media (max-width: 768px) {
+                font-size: 12px !important;
+            }
+            a{
+                color: #1EC1C3;
+                border-bottom: 1px solid #1EC1C3;
+                text-decoration: none;
+            }
+        }
+    }
+    .send-code
+    {
+        text-align: center;
+        padding: 0 30px;
+        @media (max-width: 280px) {
+            margin-top: 20px;
+        }
+        p{
+            margin: 8px 0;
+            font-size: 14px !important;
+            span{
+                color: #1EC1C3;
+            }
+           @media (max-width: 280px) {
+                font-size: 13px !important;
+           }
+        }
+        .one{
+            color: #A6A7B3;
+        }
+    }
+}

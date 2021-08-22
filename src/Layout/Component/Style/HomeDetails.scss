@@ -1,0 +1,236 @@
+@import "../../../Style/_variables.scss";
+
+.main-home-details-container
+{
+    .item-details
+    {
+        .item{
+            background-color: $secondColor;
+            border-radius: 10px;
+            padding: 15px 30px;
+            margin-bottom: 30px;
+        }
+        .item-1
+        {
+            padding-top: 100px;
+            h6{
+                color: #A6A7B3;
+                font-size: 15px;
+            }
+            .code
+            {
+                margin-bottom: 15px;
+                position: relative;
+                span{
+                    font-size: 25px;
+                    font-weight: 600;
+                    @media (max-width: 1024px) {
+                        font-size: 15px;
+                    }
+                }
+                .icon
+                {
+                    position: absolute;
+                    right: 10px;
+                    top: 0;
+                    width: 30px;
+                    height: 30px;
+                    line-height: 25px;
+                    background-color: #284C6B;
+                    border-radius: 50%;
+                    text-align: center;
+                    @media (max-width: 1024px) {
+                        right: -10px;
+                        line-height: 30px;
+                    }
+                    @media (max-width: 768px) {
+                        line-height: 30px;
+                    }
+                    i{
+                        font-size: 17px;
+                        color: #1EC1C3;
+                    }
+                }
+            }
+            .buttons
+            {
+                margin: 10px 0 5px 0;
+               button{
+                   border: none;
+                   padding: 10px;
+                   border-radius: 5px;
+               }
+                .button-1{
+                    display: inline-block;
+                    width: 55%;
+                    position: relative;
+                    background-color: #01A9F4;
+                    color: #FFFFFF;
+                    text-align: left;
+                    @media (max-width: 1024px) {
+                        display: block;
+                        width: 100%;
+                        margin-bottom: 10px;
+                    }
+                    strong{
+                        position: absolute;
+                        right: 10px;
+                    }
+                }
+                .button-2{
+                    display: inline-block;
+                    width: 35%;
+                    position: relative;
+                    background-color: #323662;
+                    color: #EC4165;
+                    margin-left: 25px;
+                    @media (max-width: 1024px) {
+                        display: block;
+                        width: 100%;
+                        margin-bottom: 10px;
+                        margin-left: 0;
+                    }
+                }
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+        .item-2
+        {
+            display: flex;
+            justify-content: space-between;
+            @media (max-width: 1024px) {
+                display: block;
+            }
+            .details
+            {
+                flex: .7;
+                @media (max-width: 1024px) {
+                    flex: 1;
+                }
+                .title
+                {
+                    margin-bottom: 10px;
+                    i{
+                        margin-right: 8px;
+                        color: #01A9F4;
+                    }
+                }
+            }
+            p{
+                margin: 3px 0;
+                color: #A6A7B3;
+                font-size: 14px;
+            }
+            h6{
+                font-size: 18px;
+                font-weight: 400;
+            }
+            button{
+                padding: 0;
+                flex: .3;
+                border-radius: 5px;
+                background-color: #323662;
+                color: #EC4165;
+                border: none;
+                height: 40px;
+                line-height: 40px;
+                margin-top: 15px;
+                @media (max-width: 1024px) {
+                    flex: 1;
+                    width: 100%;
+                }
+            }
+            .btn-2{
+                color: #1EC1C3;
+                margin-top: 50px;
+                @media (max-width: 1024px) {
+                   margin-top: 10px;
+                }
+            }
+        }
+        .item-3
+        {
+            margin: 0;
+            display: flex;
+            @media (max-width: 1024px) {
+                display: block;
+            }
+            @media (max-width: 768px) {
+                display: flex;
+            }
+            @media (max-width: 280px) {
+                display: block;
+                margin: 0 auto;
+            }
+            .item-icon{
+                flex: .5;
+                border: 1px solid #323662;
+                border-radius: 5px;
+                text-align: center;
+                width: 150px;
+                height: 100px;
+                overflow: hidden;
+                @media (max-width: 1024px) {
+                    flex: 1;
+                    margin: 0 auto;
+                    height: 150px;
+                }
+                @media (max-width: 768px) {
+                   flex: .5;
+                    margin: 0;
+                    height: 100px;
+                }
+                @media (max-width: 280px) {
+                    flex: 1;
+                    margin: 0 auto;
+                }
+                img{
+                    width: 100%;
+                    @media (max-width: 768px) {
+                        width: 100px;
+                    }
+                    @media (max-width: 375px) {
+                        width: 70px;
+                        margin-top: 15px;
+                    }
+                }
+            }
+            .item-3-btn{
+                background-color: #1EC1C3;
+                color: #FFFFFF;
+                flex: .5;
+                width: 100%;
+                display: block;
+                border: none;
+                height: 40px;
+                margin: 10px 0 10px 20px;
+                @media (max-width: 1024px) {
+                    font-size: 8px;
+                    flex: 1;
+                    margin: 10px 0;
+                }
+                @media (max-width: 768px) {
+                    flex: .5;
+                    margin: 10px 0 10px 20px;
+                }
+                @media (max-width: 360px) {
+                    font-size: 10px;
+                }
+                @media (max-width: 280px) {
+                    flex: 1;
+                    margin: 10px 0;
+                }
+                i{
+                    color: #19A2A4;
+                    margin-right: 10px;
+                    font-size: 25px;
+                    @media (max-width: 280px) {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

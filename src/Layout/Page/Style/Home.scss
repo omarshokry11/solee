@@ -1,0 +1,39 @@
+@import "../../../Style/_variables.scss";
+
+.main-home-container
+{
+    background-color: $mainColor;
+    color: #FFFFFF;
+    padding: 50px 70px;
+    @media (max-width: 1024px) {
+        margin-bottom: 570px;
+    }
+    @media (max-width: 768px) {
+        margin-bottom: 240px;
+    }
+    @media (max-width: 700px) {
+        padding: 50px 10px;
+        margin-bottom: 0;
+    }
+    .home-content
+    {
+        padding-top: 100px;
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 768px) {
+            display: block;
+        }
+        .home-table{
+            flex: .68;
+            @media (max-width: 768px) {
+                flex: 1;
+            }
+        }
+        .home-details{
+            flex: .28;
+            @media (max-width: 768px) {
+                flex: 1;
+            }
+        }
+    }
+}

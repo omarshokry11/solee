@@ -1,0 +1,68 @@
+@import "../../../../Style/_variables.scss";
+
+.main-notifications-container
+{
+    position: absolute;
+    top: 80px;
+    right: 100px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #3D447B;
+    background-color: #2C3159;
+    height: 400px;
+    width: 350px;
+    overflow: auto;
+    z-index: 10;
+    @media (max-width: 700px) {
+        right: 0;
+    }
+    @media (max-width: 320px) {
+        width: 300px;
+    }
+    @media (max-width: 280px) {
+        width: 270px;
+    }
+    .item-notification
+    {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px;
+        .icon-notification
+        {
+            flex: .1;
+            margin-right: 10px;
+            font-size: 25px;
+            .check{
+                color: #1EC1C3;
+                border: 8px solid #294E6E;
+            }
+            i{
+                border: 8px solid #564D4E;
+                color: #FCBC23;
+                border-radius: 50%;
+            }
+        }
+        .details-notification
+        {
+            flex: .9;
+            h6 {
+                font-size: 14px;
+                line-height: 1.4;
+                @media (max-width: 280px) {
+                    font-size: 12px;
+                }
+                span{
+                    color: #A6A7B3;
+                    margin: 0;
+                }
+                .time{
+                    display: block;
+                }
+            }
+        }
+    }
+    .active-notification{
+        border: 1px solid #804C52;
+        margin-bottom: 10px;
+    }
+}

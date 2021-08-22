@@ -1,0 +1,110 @@
+@import "../../../Style/_variables.scss";
+
+.main-table-product-container
+{
+    @media (max-width: 768px) {
+        margin-bottom: 30px;
+    }
+    .main-table-product-content
+    {
+        .main-table-product-box
+        {
+            padding: 20px;
+            overflow: auto;
+            @media (max-width: 1024px) {
+                width: 580px;
+            }
+            @media (max-width: 768px) {
+                width: 580px;
+            }
+            @media (max-width: 768px) {
+                width: 620px;
+            }
+            @media (max-width: 550px) {
+                width: 500px;
+            }
+            @media (max-width: 500px) {
+                width: 350px;
+            }
+            @media (max-width: 450px) {
+                width: 380px;
+            }
+            @media (max-width: 400px) {
+                width: 350px;
+            }
+            @media (max-width: 350px) {
+                width: 290px;
+            }
+            @media (max-width: 280px) {
+                width: 250px;
+            }
+            .table-header-item
+            {
+                width: 1200px;
+                overflow: auto;
+                background-color: #2B2F55;
+                border-radius: 10px;
+                padding: 10px;
+                display: flex;
+                h5{
+                    margin-top: 5px;
+                    flex: .15;
+                    text-align: center;
+                    font-size: 17px;
+                    font-weight: 600;
+                }
+            }
+            .table-body
+            {
+                width: 1200px;
+                height: 900px;
+                padding: 20px;
+                overflow: auto;
+                .table-body-item
+                {
+                    padding: 20px 0;
+                    display: flex;
+                    border-bottom: 1px solid #4D4F68;
+                    span{
+                        display: inline-block;
+                        margin-top: 5px;
+                        flex: .15;
+                        text-align: center;
+                        font-size: 13px;
+                    }
+                    .success{
+                        font-size: 17px;
+                        border-radius: 5px;
+                        padding: 5px;
+                        background-color: #2D4D66;
+                        color: #63F4F7;
+                    }
+                    .fail{
+                        font-size: 17px;
+                        border-radius: 5px;
+                        padding: 5px;
+                        background-color: #4C3343;
+                        color: #FE7448;
+                    }
+                }
+            }
+        }
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #363955;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #868899;
+    border-radius: 5px;
+}

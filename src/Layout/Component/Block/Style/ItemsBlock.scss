@@ -1,0 +1,104 @@
+@import "../../../../Style/_variables.scss";
+
+.main-item-block-container
+{
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 768px) {
+        display: block;
+    }
+    .item{
+        background-color: $secondColor;
+        padding: 15px 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        h6{
+            font-size: 15px;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+    }
+    .item-1
+    {
+        flex: .23;
+        @media (max-width: 768px) {
+            flex: 1;
+        }
+        .history
+        {
+            span{
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                border-radius: 5px;
+                font-size: 16px;
+                margin-right: 20px;
+                background-color: #36395D;
+                @media (max-width: 1024px) {
+                    margin-right: 5px;
+                    width: 29px;
+                    height: 29px;
+                    line-height: 29px;
+                }
+                @media (max-width: 768px) {
+                    margin-right: 20px;
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                }
+            }
+            .month{
+                background-color: #01A9F4;
+            }
+        }
+    }
+    .item-2
+    {
+        flex: .33;
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 768px) {
+            flex: 1;
+        }
+        .details
+        {
+            p
+            {
+                margin: 0;
+                strong{
+                    color: #63F4F7;
+                    font-size: 30px;
+                }
+                .number{
+                    color: #FE7448;
+                }
+                small{
+                    color: #A6A7B3;
+                    font-size: 15px;
+                }
+            }
+        }
+        .icon
+        {
+            background-color: #365675;
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            line-height: 85px;
+            text-align: center;
+            margin-top: 10px;
+            i{
+                font-size: 35px;
+                color: #63F4F7;
+            }
+        }
+        .icon-2{
+            background-color: #553D52;
+            i{
+                color: #FE7448;
+            }
+        }
+    }
+}

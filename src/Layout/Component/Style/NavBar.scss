@@ -1,0 +1,134 @@
+@import "../../../Style/_variables.scss";
+
+.main-navbar-container
+{
+    .item-profile
+    {
+        position: relative;
+        .user
+        {
+            position: absolute;
+            right: 25px;
+            display: flex;
+            justify-content: space-between;
+            @media (max-width: 700px) {
+                right: 0;
+            }
+            .notification
+            {
+                border: 1px solid $secondColor;
+                border-radius: 5px;
+                width: 55px;
+                height: 55px;
+                line-height: 55px;
+                text-align: center;
+                position: absolute;
+                right: 300px;
+                top: 5px;
+                cursor: pointer;
+                span{
+                    display: inline-block;
+                    width: 14px;
+                    height: 14px;
+                    background-color: #FE7448;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: -5px;
+                    right: -5px;
+                }
+                @media (max-width: 700px) {
+                    left: -68px;
+                    top: 10px;
+                }
+                @media (max-width: 280px) {
+                    top: 0;
+                }
+                i{
+                    font-size: 25px;
+                    color: #A6A7B3;
+                }
+            }
+            .user-img
+            {
+                flex: .3;
+                img{
+                    margin-right: 10px;
+                    width: 70px;
+                    border-radius: 50%;
+                    @media (max-width: 280px) {
+                        width: 50px;
+                    }
+                }
+            }
+            .user-details
+            {
+                margin-top: 15px;
+                flex: .6;
+                @media (max-width: 280px) {
+                   margin-top: 0;
+                }
+                h4{
+                    font-size: 20px;
+                    margin-bottom: 5px;
+                    @media (max-width: 700px) {
+                        font-size: 18px;
+                    }
+                }
+                span{
+                    font-size: 15px;
+                    color: #A6A7B3;
+                    @media (max-width: 700px) {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        .icon
+        {
+            position: absolute;
+            right: 0;
+            top: 20px;
+            font-size: 22px;
+            @media (max-width: 700px) {
+                top: 10px;
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+.active
+{
+    border: 1px solid $secondColor;
+    background-color: #01A9F4;
+    border-radius: 5px;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    position: absolute;
+    right: 300px;
+    top: 5px;
+    cursor: pointer;
+    span{
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        background-color: #FE7448;
+        border-radius: 50%;
+        position: absolute;
+        top: -5px;
+        right: -5px;
+    }
+    @media (max-width: 700px) {
+        left: -68px;
+        top: 10px;
+    }
+    @media (max-width: 280px) {
+        top: 0;
+    }
+    i{
+        font-size: 25px;
+        color: #FFFFFF;
+    }
+}
